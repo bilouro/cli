@@ -40,9 +40,9 @@ class SystemCliAddIdentifier:
 
     def generate_example_excel(self):
         data = {
-            'id': [1000000017],
-            'code': ['Z15'],
-            'value': ['US-OSH-CORPOR-004'],
+            'id': [1234],
+            'code': ['XPTO'],
+            'value': ['COD-for-XPTO'],
         }
         df = pd.DataFrame(data)
         df.to_csv(self.output_filename, index=False)
@@ -202,3 +202,4 @@ if __name__ == "__main__":
 
 # execute script
 # ./systemcliaddidentifier.py -i INPUT.xlsx -o OUTPUT.xlsx --client-id ID --client-secret SECRET -env ENVIRONMENT
+
